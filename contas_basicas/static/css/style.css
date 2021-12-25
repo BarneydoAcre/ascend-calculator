@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid salmon; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
+    font-size: 16px;
+}
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.background {
+    width: 20%;
+    height: 60vh;
+    background-color: darkseagreen;
+    border-radius: 20px 40px 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.layout-saida {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    min-height: 20%;
+    background-color: rgba(135, 130, 130, 0.254);
+    border-radius: 20px 40px 20px 40px;
+}
+.output-saida {
+    padding: 10px;
+    font-size: 24px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    border-radius: 20px 40px 20px 40px;
+}
+.num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(88, 116, 69);
+    border-radius: 10%;
+    width: 25%;
+    height: 20%;
+    margin: 1%;
+}
+.num:hover{
+    background-color: rgba(135, 130, 130, 0.254);
+}
+.num-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height:100%;
+    border-radius: 20px 40px 20px 40px;
+}
+
+
+
+
+.operation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(88, 116, 69);
+    border-radius: 5px;
+    width: 100%;
+    height: 15%;
+}
+.operation:hover {
+    background-color: rgba(135, 130, 130, 0.254);
+}
+.operation-list{
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20%;
+    height:100%;
+    margin-right:10%;
+}
