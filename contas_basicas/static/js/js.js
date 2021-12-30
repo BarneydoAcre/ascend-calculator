@@ -14,5 +14,7 @@ function back(){
 
 function calculate(){
     let numero = document.getElementById('result').innerHTML
-    document.getElementById('result').innerHTML = eval(numero)
+    if(numero){
+        document.getElementById('result').innerHTML = eval(numero)
+    }
 }
