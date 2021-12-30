@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% load static %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel='stylesheet'>
     <title>Calculadora</title>
 </head>
@@ -13,29 +14,38 @@
     <div class="container">
         <div class="background">
             <div class="layout-saida">
-                <p class="output-saida">512</p>
+                <p id='result'></p>
             </div>
-            <div class="buttons">
-                <div class="num-list">
-                    <div class="num num-1">1</div>
-                    <div class="num num-2">2</div>
-                    <div class="num num-3">3</div>
-                    <div class="num num-4">4</div>
-                    <div class="num num-5">5</div>
-                    <div class="num num-6">6</div>
-                    <div class="num num-7">7</div>
-                    <div class="num num-8">8</div>
-                    <div class="num num-9">9</div>
-                    <div class="num num-0">0</div>
-                </div>
-                <div class="operation-list">
-                    <div class="operation operation-div">/</div>
-                    <div class="operation operation-mul">X</div>
-                    <div class="operation operation-sub">-</div>
-                    <div class="operation operation-sum">+</div>
-                    <div class="operation operation-equal">=</div>
-                </div>
-            </div>
+            <table class='teclado'>
+                <tr>
+                    <td><button class="num" onclick="clean()">C</button></td>
+                    <td><button class="num" onclick="back()"><</button></td>
+                    <td><button class="num" onclick="insert('/')">/</button></td>
+                    <td><button class="num" onclick="insert('x')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" onclick="insert('7')">7</button></td>
+                    <td><button class="num" onclick="insert('8')">8</button></td>
+                    <td><button class="num" onclick="insert('9')">9</button></td>
+                    <td><button class="num" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" onclick="insert('4')">4</button></td>
+                    <td><button class="num" onclick="insert('5')">5</button></td>
+                    <td><button class="num" onclick="insert('6')">6</button></td>
+                    <td><button class="num" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="num" onclick="insert('1')">1</button></td>
+                    <td><button class="num" onclick="insert('2')">2</button></td>
+                    <td><button class="num" onclick="insert('3')">3</button></td>
+                    <td rowspan='2'><button class='num' style='height: 16vh;' onclick="calculate()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan='2'><button class='num' style='width: 100%;'>0</button></td>
+                    <td><button class="num" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
         </div>
     </div>
     <script type='text/javascript' src="{% static 'js/js.js' %}"></script>
